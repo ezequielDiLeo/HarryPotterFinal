@@ -166,7 +166,7 @@ ul li {
 .contenedor_casas .contenedor_info {
   background-color: rgb(3, 5, 16);
   width: 100%;
-  height: 500px;
+  height: auto;
   display: flex;
   overflow: hidden;
   text-align: justify;
@@ -204,7 +204,7 @@ ul li {
   }
 }
 .contenedor_casas .contenedor_info .contenedor_p {
-  width: 50%;
+  width: 60%;
   height: 400px;
   overflow: scroll;
   color: rgb(211, 208, 208);
@@ -271,8 +271,16 @@ ul li {
   width: 0;
 }
 
+@media only screen and (min-width: 1250px) {
+  .contenedor_casas .contenedor_info .contenedor_img img {
+    width: 680px;
+  }
+  .contenedor_casas .contenedor_info .contenedor_p {
+    margin-right: 50px;
+  }
+}
 @media only screen and (max-width: 1250px) {
-  .contenedor_info {
+  .contenedor_casas .contenedor_info {
     width: 100%;
     height: auto;
     display: flex;
@@ -281,7 +289,7 @@ ul li {
     justify-content: center;
     text-align: center;
   }
-  .contenedor_img {
+  .contenedor_casas .contenedor_info .contenedor_img {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -289,10 +297,24 @@ ul li {
     align-items: center;
     text-align: center;
   }
-  .contenedor_p {
+  .contenedor_casas .contenedor_info .contenedor_img img {
+    width: 680px;
+  }
+  .contenedor_casas .contenedor_info .contenedor_img .contenedor_p {
     width: 100%;
     display: flex;
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .contenedor_casas .contenedor_info .contenedor_img img {
+    width: 400px;
+    height: auto;
+  }
+  .contenedor_casas .contenedor_info .contenedor_p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 /*css autora*/
@@ -333,7 +355,7 @@ ul li {
   width: 100%;
   height: 500px;
   display: flex;
-  overflow: scroll;
+  overflow: hidden;
   text-align: justify;
   padding: 40px 10px 40px 10px;
   padding-right: 40px;
@@ -348,7 +370,7 @@ ul li {
   width: 700px;
   height: 400px;
 }
-.contenedor_A .contenedor_p {
+.contenedor_A .contenedor_B {
   width: 50%;
   height: 400px;
   overflow: scroll;
@@ -359,12 +381,12 @@ ul li {
   text-align: justify;
   align-items: center;
 }
-.contenedor_A .contenedor_p .Bio {
+.contenedor_A .contenedor_B .Bio {
   text-shadow: 0 0 5px rgb(253, 249, 0);
   padding-top: 20px;
   text-align: center;
 }
-.contenedor_A .contenedor_p p {
+.contenedor_A .contenedor_B p {
   padding: 20px 20px 20px 20px;
   text-align: justify;
 }
@@ -387,7 +409,7 @@ ul li {
     align-items: center;
     text-align: center;
   }
-  .contenedor_p {
+  .contenedor_B {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -397,7 +419,7 @@ ul li {
   .contenedor_A .contenedor_img_A img {
     width: 500px;
   }
-  .contenedor_A .contenedor_p {
+  .contenedor_A .contenedor_B {
     width: 100%;
     height: 400px;
     overflow: scroll;
@@ -407,17 +429,17 @@ ul li {
     align-items: center;
     margin-top: 10px;
   }
-  .contenedor_A .contenedor_p .Bio {
+  .contenedor_A .contenedor_B .Bio {
     text-shadow: 0 0 5px rgb(253, 249, 0);
     padding: 20px;
     text-align: center;
   }
-  .contenedor_A .contenedor_p p {
+  .contenedor_A .contenedor_B p {
     padding: 20px 20px 20px 20px;
     text-align: justify;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 700px) {
   .contenedor_A .contenedor_img_A img {
     width: 300px;
     height: 200px;
@@ -543,7 +565,7 @@ ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(rgb(8, 0, 43), rgb(0, 0, 0));
+  background: linear-gradient(rgb(12, 0, 68), rgb(0, 0, 0));
   color: #ede3e3;
   padding-top: 10px;
   text-align: center;
@@ -773,7 +795,7 @@ ul li {
 /* media parte fondo */
 @media screen and (max-width: 900px) {
   .infoLibros {
-    background-color: #000000;
+    background-color: black;
   }
   .infoLibros .fondoLibros .bookInfo {
     font-size: 20px;
@@ -885,7 +907,7 @@ ul li {
 .acceso {
   width: 100%;
   height: auto;
-  background-color: #020202;
+  background: linear-gradient(rgb(0, 0, 0), rgb(4, 0, 16));
   margin: 0;
 }
 .acceso .contenedorAcceso {
