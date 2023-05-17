@@ -206,7 +206,7 @@ ul li {
 .contenedor_casas .contenedor_info .contenedor_p {
   width: 60%;
   height: 400px;
-  overflow: scroll;
+  overflow: auto;
   color: rgb(211, 208, 208);
   margin: 0 50px 0 50px;
   padding: 20px 10px 20px 10px;
