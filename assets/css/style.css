@@ -160,7 +160,7 @@ ul li {
 .contenedor_casas {
   width: 100%;
   height: auto;
-  overflow: auto;
+  overflow: hidden;
   scrollbar-width: none;
 }
 .contenedor_casas .contenedor_info {

@@ -171,7 +171,7 @@ ul li{
 .contenedor_casas{
     width: 100%;
     height: auto;
-    overflow: auto;
+    overflow: hidden;
     scrollbar-width: none;
     .contenedor_info{
         background-color: rgb(3, 5, 16);
@@ -722,6 +722,12 @@ ul li{
                 font-size: 20px;
                 color: #ffffff;
                 text-decoration: underline rgb(138, 138, 34);
+            }
+            .btn{
+                font-size: 17px;
+                color: rgb(0, 0, 0);
+                background-color: rgb(138, 138, 34);
+                text-decoration: none;
             }
         }
         .contenedor_img:hover{
