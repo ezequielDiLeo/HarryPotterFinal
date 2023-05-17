@@ -651,6 +651,12 @@ ul li {
   -webkit-text-decoration: underline rgb(138, 138, 34);
           text-decoration: underline rgb(138, 138, 34);
 }
+.contenedor_galeria .imagenesL .contenedor_img .btn {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(138, 138, 34);
+  text-decoration: none;
+}
 .contenedor_galeria .imagenesL .contenedor_img:hover {
   box-shadow: 5px 5px 20px black;
   transform: translateY(-2%);
